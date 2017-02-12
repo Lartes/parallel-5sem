@@ -1,0 +1,18 @@
+all: gen.cpp main.cpp simple.cpp
+	g++ gen.cpp -o gen
+	g++ main.cpp -pthread -o main
+	g++ simple.cpp -o simple
+
+gen: gen.cpp
+	g++ gen.cpp -o gen
+
+main: main.cpp
+	g++ main.cpp -pthread -o main
+
+simple: simple.cpp
+	g++ simple.cpp -o simple
+
+clean: 
+	rm gen
+	rm main
+	rm simple

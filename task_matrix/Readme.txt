@@ -1,0 +1,7 @@
+<gen.cpp N M> - creating matrix NxM and writing it as "in"
+<main.cpp N> - program for finding maximum and minimum value of the matrix from "in" with using N threads
+<simple.cpp> - --"-- without threads
+How to run:
+1) makefile - without comments
+2) start.sh - starts program with [0, 1, 2, 3, 4, 6, 8, 16, 24, 32] threads and [3, 10, 100, 500, 1000, 3000, 5000, 10000] matrix ten times. It writes files data[1,...,10].csv (with time of processing) and time.csv (with time of file reading) for Python.
+3) Graph.ipynb - for creating graphs based on data from previous script
